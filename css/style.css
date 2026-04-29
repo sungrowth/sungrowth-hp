@@ -499,7 +499,7 @@ section { padding: 6.5rem 0; }
 /* ============================
    LATEST POSTS
    ============================ */
-#latest-posts { background: var(--white); }
+#latest-posts { background: var(--white); padding: 3.5rem 0; }
 .latest-posts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -786,7 +786,7 @@ section { padding: 6.5rem 0; }
 /* ============================
    FAQ
    ============================ */
-#faq { background: var(--white); }
+#faq { background: var(--white); padding-bottom: 3.5rem; }
 .faq-list {
   max-width: 780px;
   margin: 0 auto;
@@ -920,7 +920,7 @@ section { padding: 6.5rem 0; }
 /* ============================
    CONTACT FORM SECTION
    ============================ */
-#contact-form { background: var(--white); }
+#contact-form { background: var(--white); padding-top: 3.5rem; }
 .form-wrap {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -971,11 +971,15 @@ section { padding: 6.5rem 0; }
 .btn-line-main svg { width: 22px; height: 22px; flex-shrink: 0; }
 .btn-line-main:hover { background: #05b34c; }
 .form-line-qr-wrap {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border);
+  width: 100%;
+}
+.form-line-qr-note {
+  flex: 0 0 auto;
 }
 .form-line-qr img { border: 1px solid var(--border); display: block; }
 .form-line-qr-note {
@@ -1184,7 +1188,7 @@ section { padding: 6.5rem 0; }
 .float-line {
   position: fixed;
   bottom: 1.5rem;
-  right: 1.5rem;
+  right: 0.5rem;
   z-index: 300;
   background: var(--line-green);
   color: var(--white);
@@ -1207,7 +1211,7 @@ section { padding: 6.5rem 0; }
 .back-to-top {
   position: fixed;
   bottom: 1.5rem;
-  right: calc(1.5rem + 124px);
+  right: calc(0.5rem + 124px);
   z-index: 300;
   width: 44px;
   height: 44px;
@@ -1238,5 +1242,5 @@ section { padding: 6.5rem 0; }
     letter-spacing: 0.02em;
   }
   .float-line svg { width: 24px; height: 24px; }
-  .back-to-top { right: calc(1.5rem + 72px); }
+  .back-to-top { right: calc(0.5rem + 72px); }
 }
