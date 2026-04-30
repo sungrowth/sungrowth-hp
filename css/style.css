@@ -1009,6 +1009,12 @@ section { padding: 6.5rem 0; }
   font-size: 0.72rem;
   margin-left: 0.3rem;
 }
+.opt {
+  color: var(--text-mute);
+  font-weight: 400;
+  font-size: 0.72rem;
+  margin-left: 0.3rem;
+}
 .form-row input,
 .form-row select,
 .form-row textarea {

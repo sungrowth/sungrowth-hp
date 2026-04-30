@@ -1,0 +1,315 @@
+/* ============================
+   SERVICE PAGES
+   ============================ */
+
+/* ---- index.html のサービスカードをリンク化 ---- */
+a.service-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+a.service-card:hover {
+  border-color: var(--navy);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(30,58,95,0.1);
+}
+.service-card-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--navy);
+  font-weight: 600;
+  margin-top: 1rem;
+  letter-spacing: 0.04em;
+}
+.service-card-more svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---- 売買仲介 中間ページ（分岐カード） ---- */
+.service-branch-intro {
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-mute);
+  line-height: 1.9;
+}
+.service-branch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+.service-branch-card {
+  display: block;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.service-branch-card:hover {
+  border-color: var(--navy);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(30,58,95,0.12);
+}
+.service-branch-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--off-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+}
+.service-branch-icon svg {
+  width: 30px;
+  height: 30px;
+  color: var(--navy);
+}
+.service-branch-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--navy);
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.05em;
+}
+.service-branch-desc {
+  font-size: 0.83rem;
+  color: var(--text-mute);
+  line-height: 1.85;
+  margin-bottom: 1.4rem;
+}
+.service-branch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.04em;
+}
+.service-branch-btn svg {
+  width: 15px;
+  height: 15px;
+}
+.service-branch-section {
+  background: var(--off-white);
+  padding: 5rem 0;
+}
+@media (max-width: 600px) {
+  .service-branch { grid-template-columns: 1fr; gap: 1.2rem; }
+  .service-branch-card { padding: 2.2rem 1.5rem; }
+}
+
+/* ---- サービスページ内 FAQ ---- */
+.service-faq-wrap {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.service-faq-heading {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+/* ---- サービスページ共通レイアウト ---- */
+.service-page-hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 3.5rem 0 2.5rem;
+  text-align: center;
+}
+.service-page-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.6rem;
+}
+.service-page-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.8rem;
+}
+.service-page-subtitle {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.72);
+  letter-spacing: 0.04em;
+}
+.service-page-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+}
+.service-page-breadcrumb a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+}
+.service-page-breadcrumb a:hover { color: var(--white); }
+
+/* ---- サービスページ コンテンツ ---- */
+.service-content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+.service-eyecatch {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  aspect-ratio: 16 / 7;
+}
+.service-eyecatch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.service-lead {
+  font-size: 1rem;
+  line-height: 2;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+}
+.service-body h2 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--navy);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  letter-spacing: 0.05em;
+}
+.service-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 1.5rem 0 0.5rem;
+}
+.service-body p {
+  font-size: 0.93rem;
+  line-height: 1.95;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.service-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+.service-body ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--text);
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.service-body ul li:last-child { border-bottom: none; }
+.service-body ul li svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 0.2em;
+  color: var(--navy);
+}
+
+/* ---- 個人的なエピソード ブロック ---- */
+.service-story {
+  background: var(--off-white);
+  border-left: 3px solid var(--navy);
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem 1.8rem;
+  margin: 2rem 0;
+}
+.service-story p {
+  font-size: 0.92rem;
+  line-height: 2;
+  color: var(--text);
+  margin: 0;
+}
+
+/* ---- サービスページ CTA ---- */
+.service-cta {
+  background: var(--navy);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.service-cta-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.05em;
+}
+.service-cta p {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+.service-cta-actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.service-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.8rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.service-cta-btn--line {
+  background: #06c755;
+  color: var(--white);
+}
+.service-cta-btn--line:hover { background: #05b34c; }
+.service-cta-btn--form {
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.service-cta-btn--form:hover { background: rgba(255,255,255,0.25); }
+.service-cta-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---- 売買仲介 中間ページ セクション背景 ---- */
+.service-branch-section {
+  padding: 5rem 0;
+}
+
+@media (max-width: 600px) {
+  .service-content { padding: 2.5rem 1rem 3.5rem; }
+  .service-cta { padding: 2rem 1.2rem; }
+  .service-cta-actions { flex-direction: column; align-items: center; }
+}

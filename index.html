@@ -35,6 +35,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/service.css">
 </head>
 <body>
 
@@ -182,6 +183,10 @@
           <div class="trust-icon"><svg><use href="#i-handshake"/></svg></div>
           <span>税理士・司法書士など<br>専門家と連携可能</span>
         </div>
+        <div class="trust-item fade-in">
+          <div class="trust-icon"><svg><use href="#i-chat"/></svg></div>
+          <span>出張・オンライン<br>相談対応</span>
+        </div>
       </div>
     </div>
   </div>
@@ -198,8 +203,8 @@
             <li><svg><use href="#i-check"/></svg><span>相続や将来のことが不安で、何から始めればいいか分からない</span></li>
             <li><svg><use href="#i-check"/></svg><span>不動産を売るべきか、貸すべきか、判断に迷っている</span></li>
             <li><svg><use href="#i-check"/></svg><span>空き家の管理や活用方法に困っている</span></li>
-            <li><svg><use href="#i-check"/></svg><span>住み替えや資産の見直しを検討している</span></li>
-            <li><svg><use href="#i-check"/></svg><span>信頼できる不動産会社に相談したい</span></li>
+            <li><svg><use href="#i-check"/></svg><span>住み替えを考えているが、売却と購入のタイミングがわからない</span></li>
+            <li><svg><use href="#i-check"/></svg><span>今の家がいくらで売れるのか、目安がわからない</span></li>
           </ul>
         </div>
       </div>
@@ -212,26 +217,30 @@
     <div class="container">
       <h2 class="section-heading-center fade-in">サービス</h2>
       <div class="service-grid">
-        <article class="service-card fade-in">
+        <a href="service/sozoku.html" class="service-card fade-in">
           <div class="service-card-icon"><svg><use href="#i-document"/></svg></div>
           <h3>相続・不動産相談</h3>
           <p>相続や将来の不安・不動産の活用方法など、幅広いお悩みに対応します。</p>
-        </article>
-        <article class="service-card fade-in">
+          <span class="service-card-more">詳しく見る <svg><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a href="service/baibai.html" class="service-card fade-in">
           <div class="service-card-icon"><svg><use href="#i-house"/></svg></div>
           <h3>売買仲介</h3>
           <p>土地・戸建・マンションの売却・購入を、適正価格でサポートします。</p>
-        </article>
-        <article class="service-card fade-in">
+          <span class="service-card-more">詳しく見る <svg><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a href="service/chintai.html" class="service-card fade-in">
           <div class="service-card-icon"><svg><use href="#i-door"/></svg></div>
           <h3>賃貸仲介・管理</h3>
           <p>入居者募集から管理まで、オーナー様の負担を軽減します。</p>
-        </article>
-        <article class="service-card fade-in">
+          <span class="service-card-more">詳しく見る <svg><use href="#i-arrow-right"/></svg></span>
+        </a>
+        <a href="service/toushi.html" class="service-card fade-in">
           <div class="service-card-icon"><svg><use href="#i-chart"/></svg></div>
           <h3>不動産投資</h3>
           <p>収益物件のご紹介から資金計画まで、長期的な視点でサポートします。</p>
-        </article>
+          <span class="service-card-more">詳しく見る <svg><use href="#i-arrow-right"/></svg></span>
+        </a>
       </div>
     </div>
   </section>
@@ -482,6 +491,11 @@
             <label for="f-tel">電話番号 <span class="req">必須</span></label>
             <input type="tel" id="f-tel" name="tel" placeholder="例）090-0000-0000" required>
             <p class="form-hint">※ 日程調整のご連絡のみに使用します。</p>
+          </div>
+          <div class="form-row">
+            <label for="f-email">メールアドレス <span class="opt">任意</span></label>
+            <input type="email" id="f-email" name="email" placeholder="例）sample@email.com">
+            <p class="form-hint">※ メールでのご返信を希望の場合は、お問い合わせ内容にその旨をご記入ください。</p>
           </div>
           <div class="form-row">
             <label for="f-category">お問い合わせ種別</label>
