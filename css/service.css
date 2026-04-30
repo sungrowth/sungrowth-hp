@@ -310,45 +310,59 @@ a.service-card:hover {
   padding: 5rem 0;
 }
 
-/* ---- 流れ ステップ ---- */
-.service-steps {
-  margin: 0.5rem 0 2rem;
+/* ---- ビジュアルフロー グリッド ---- */
+.service-flow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin: 1rem 0 2.5rem;
 }
-.service-step {
+.service-flow-card {
+  background: var(--off-white);
+  border-radius: 10px;
+  padding: 1.2rem 1.25rem 1.15rem;
+}
+.service-flow-header {
   display: flex;
-  gap: 1.2rem;
-  padding: 1.4rem 0;
-  border-bottom: 1px solid var(--border);
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
 }
-.service-step:last-child { border-bottom: none; }
-.service-step-num {
-  width: 34px;
-  height: 34px;
+.service-flow-num {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
   background: var(--navy);
   color: var(--white);
   border-radius: 50%;
+  font-size: 0.68rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.72rem;
-  font-weight: 700;
-  flex-shrink: 0;
-  margin-top: 0.1rem;
   letter-spacing: 0.02em;
 }
-.service-step-body h3 {
-  font-size: 0.93rem;
+.service-flow-title {
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--navy);
-  margin: 0 0 0.4rem;
+  line-height: 1.4;
 }
-.service-step-body p {
-  font-size: 0.87rem;
-  line-height: 1.85;
+.service-flow-desc {
+  font-size: 0.81rem;
   color: var(--text-mute);
+  line-height: 1.78;
   margin: 0;
+  padding-left: calc(26px + 0.6rem);
 }
-.service-step-body p + p { margin-top: 0.5rem; }
+/* 奇数枚の最後のカードは全幅 */
+.service-flow-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+@media (max-width: 520px) {
+  .service-flow-grid { grid-template-columns: 1fr; }
+  .service-flow-card:last-child:nth-child(odd) { grid-column: auto; }
+}
 
 @media (max-width: 600px) {
   .service-content { padding: 2.5rem 1rem 3.5rem; }

@@ -13,6 +13,14 @@
   </script>
   <title>【2026年最新】足立区の子育て支援と、治安の「今」を知る | サングロース不動産</title>
   <meta name="description" content="足立区の子育て支援制度と治安の実態を、2026年の最新データと現場目線でまとめました。入学準備金・給食費無償化など独自施策の詳細も解説。">
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="サングロース不動産">
+  <meta property="og:title" content="【2026年最新】足立区の子育て支援と、治安の「今」を知る | サングロース不動産">
+  <meta property="og:description" content="足立区の子育て支援制度と治安の実態を、2026年の最新データと現場目線でまとめました。入学準備金・給食費無償化など独自施策の詳細も解説。">
+  <meta property="og:url" content="https://sungrowth.jp/blog/202604-adachi-kosodate-chian.html">
+  <meta property="og:image" content="https://sungrowth.jp/blog/images/blog2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -40,6 +48,13 @@
       </symbol>
       <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M5 12h14M13 5l7 7-7 7"/>
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="9" y="9" width="13" height="13" rx="2"/>
+        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
       </symbol>
     </defs>
   </svg>
@@ -176,6 +191,25 @@
 
         <p>公式LINEからもメッセージを受け付けております。</p>
 
+      </div>
+
+      <!-- 共有ボタン -->
+      <div class="article-share">
+        <p class="article-share-label">Share</p>
+        <div class="article-share-btns">
+          <a href="#" class="share-btn share-btn--x" id="share-x" target="_blank" rel="noopener noreferrer" aria-label="Xでシェア">
+            <svg><use href="#i-x"/></svg>
+            <span>X（旧Twitter）</span>
+          </a>
+          <a href="#" class="share-btn share-btn--line" id="share-line" target="_blank" rel="noopener noreferrer" aria-label="LINEでシェア">
+            <svg><use href="#i-line"/></svg>
+            <span>LINE</span>
+          </a>
+          <button class="share-btn share-btn--copy" id="share-copy" type="button" aria-label="URLをコピー">
+            <svg><use href="#i-copy"/></svg>
+            <span>URLをコピー</span>
+          </button>
+        </div>
       </div>
 
       <!-- 記事フッター -->
@@ -315,5 +349,27 @@
   </button>
 
   <script src="../js/main.js"></script>
+  <script>
+    (function () {
+      var pageUrl   = encodeURIComponent(location.href);
+      var pageTitle = encodeURIComponent(document.title);
+      document.getElementById('share-x').href =
+        'https://twitter.com/intent/tweet?url=' + pageUrl + '&text=' + pageTitle;
+      document.getElementById('share-line').href =
+        'https://social-plugins.line.me/lineit/share?url=' + pageUrl;
+      document.getElementById('share-copy').addEventListener('click', function () {
+        var btn = this;
+        var label = btn.querySelector('span');
+        navigator.clipboard.writeText(location.href).then(function () {
+          btn.classList.add('copied');
+          label.textContent = 'コピーしました！';
+          setTimeout(function () {
+            btn.classList.remove('copied');
+            label.textContent = 'URLをコピー';
+          }, 2000);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

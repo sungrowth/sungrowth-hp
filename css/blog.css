@@ -206,3 +206,47 @@
 .article-back svg { width: 16px; height: 16px; }
 .article-contact { font-size: 0.82rem; color: var(--text-mute); }
 .article-contact a { color: var(--navy); text-decoration: underline; }
+
+/* ---- 記事 共有ボタン ---- */
+.article-share {
+  margin-top: 2.5rem;
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid var(--border);
+}
+.article-share-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  margin-bottom: 0.85rem;
+}
+.article-share-btns {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+  line-height: 1;
+  font-family: var(--font-sans);
+}
+.share-btn:hover { opacity: 0.8; transform: translateY(-1px); }
+.share-btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+.share-btn--x   { background: #000; color: #fff; }
+.share-btn--line { background: #06c755; color: #fff; }
+.share-btn--copy { background: var(--off-white); color: var(--navy); border: 1px solid var(--border); }
+.share-btn--copy.copied { background: var(--navy); color: #fff; border-color: var(--navy); }
+@media (max-width: 480px) {
+  .article-share-btns { gap: 0.5rem; }
+  .share-btn { padding: 0.5rem 0.95rem; font-size: 0.79rem; }
+}
