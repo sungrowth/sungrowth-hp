@@ -6,7 +6,8 @@
 a.service-card {
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 a.service-card:hover {
   border-color: var(--navy);
@@ -17,10 +18,11 @@ a.service-card:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--navy);
   font-weight: 600;
-  margin-top: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
   letter-spacing: 0.04em;
 }
 .service-card-more svg {
