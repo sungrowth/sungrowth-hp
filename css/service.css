@@ -364,6 +364,63 @@ a.service-card:hover {
   .service-flow-card:last-child:nth-child(odd) { grid-column: auto; }
 }
 
+/* ---- ステッパー形式フロー（縦一列）---- */
+.service-flow-note {
+  font-size: 0.81rem;
+  color: var(--text-mute);
+  background: var(--off-white);
+  border-left: 3px solid var(--navy);
+  border-radius: 0 6px 6px 0;
+  padding: 0.65rem 1rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.75;
+}
+.service-flow-list {
+  margin: 0 0 2.5rem;
+}
+.service-flow-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+  padding-bottom: 1.6rem;
+}
+.service-flow-item:last-child { padding-bottom: 0; }
+/* 縦の連結線 */
+.service-flow-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 26px;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+.service-flow-item .service-flow-num {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.service-flow-body {
+  flex: 1;
+  padding-top: 0.1rem;
+}
+.service-flow-body .service-flow-title {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+.service-flow-body .service-flow-desc {
+  padding-left: 0;
+  font-size: 0.83rem;
+  color: var(--text-mute);
+  line-height: 1.8;
+  margin: 0;
+}
+
 @media (max-width: 600px) {
   .service-content { padding: 2.5rem 1rem 3.5rem; }
   .service-cta { padding: 2rem 1.2rem; }
