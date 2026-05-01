@@ -426,3 +426,28 @@ a.service-card:hover {
   .service-cta { padding: 2rem 1.2rem; }
   .service-cta-actions { flex-direction: column; align-items: center; }
 }
+
+/* ---- 手数料目安テーブル ---- */
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+  margin: 0.8rem 0 0.4rem;
+}
+.fee-table th,
+.fee-table td {
+  padding: 0.48rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.fee-table th {
+  background: var(--off-white);
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+.fee-table td:last-child {
+  font-weight: 600;
+  color: var(--navy);
+}
