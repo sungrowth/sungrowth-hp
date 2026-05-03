@@ -52,6 +52,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sungrowth.jp/blog/202605-chintai-joken-minaoshi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://sungrowth.jp/blog/202605-adachi-chuko-joseikin.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
