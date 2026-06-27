@@ -214,8 +214,15 @@ a.service-card:hover {
   line-height: 1.7;
   margin: 0;
 }
+.service-points--two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (max-width: 600px) {
   .service-points { grid-template-columns: 1fr; gap: 0.7rem; }
+  .service-points--two { max-width: 100%; }
 }
 
 /* ---- サービスページ コンテンツ ---- */
