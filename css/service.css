@@ -133,6 +133,26 @@ a.service-card:hover {
   padding: 3.5rem 0 2.5rem;
   text-align: center;
 }
+.service-page-hero--img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 5.5rem 0 3.8rem;
+}
+.service-page-hero--img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 28, 55, 0.68);
+}
+.service-page-hero--img .container {
+  position: relative;
+  z-index: 1;
+}
+.service-page-hero--img .service-page-subtitle {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.88);
+}
 .service-page-label {
   font-size: 0.78rem;
   letter-spacing: 0.15em;
@@ -166,6 +186,37 @@ a.service-card:hover {
   text-decoration: none;
 }
 .service-page-breadcrumb a:hover { color: var(--white); }
+
+/* ---- 3ポイントカード ---- */
+.service-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+}
+.service-point {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--navy);
+  border-radius: 8px;
+  padding: 1.2rem 1.1rem;
+}
+.service-point-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin: 0 0 0.4rem;
+  line-height: 1.45;
+}
+.service-point-desc {
+  font-size: 0.78rem;
+  color: var(--text-mute);
+  line-height: 1.7;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .service-points { grid-template-columns: 1fr; gap: 0.7rem; }
+}
 
 /* ---- サービスページ コンテンツ ---- */
 .service-content {
