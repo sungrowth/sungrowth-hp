@@ -27,6 +27,62 @@
   <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/service.css">
+  <style>
+    .kanri-portal {
+      margin: 56px 0 48px;
+      padding: 40px 36px;
+      background: #f5f7fa;
+      border-radius: 12px;
+    }
+    .kanri-portal > h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1e3a5f;
+      margin: 0 0 10px;
+    }
+    .kanri-portal-lead {
+      font-size: 0.9375rem;
+      color: #444;
+      margin: 0 0 28px;
+      line-height: 1.7;
+    }
+    .kanri-portal-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .kanri-portal-item {
+      margin: 0;
+    }
+    .kanri-portal-item img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #dde1e8;
+      display: block;
+    }
+    .kanri-portal-item figcaption {
+      font-size: 0.8125rem;
+      color: #555;
+      margin-top: 8px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .kanri-portal-note {
+      margin: 24px 0 0;
+      font-size: 0.875rem;
+      color: #555;
+      background: #fff;
+      border-left: 3px solid #b8933a;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .kanri-portal-gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -210,6 +266,31 @@
             <p class="service-flow-desc">入居者への管理会社変更通知など、引き継ぎに必要な手続きをサポートします。切り替え後は当社が窓口となり、オーナーへの連絡は必要なものに絞ります。</p>
           </div>
         </div>
+      </div>
+
+      <!-- ============ オーナーポータル ============ -->
+      <div class="kanri-portal">
+        <h2>オーナー様専用ポータルのご案内</h2>
+        <p class="kanri-portal-lead">ご契約後は、物件の状況をスマートフォンからいつでも確認できる専用マイページをご用意しています。入居状況・家賃の振込明細・管理対応の履歴をひとつの画面で把握できます。</p>
+        <div class="kanri-portal-gallery">
+          <figure class="kanri-portal-item">
+            <img src="images/portal-income.jpeg" alt="毎月の振込予定額と内訳を確認" loading="lazy">
+            <figcaption>毎月の振込予定額と内訳を確認</figcaption>
+          </figure>
+          <figure class="kanri-portal-item">
+            <img src="images/portal-rooms.jpeg" alt="全室の入居状況をリアルタイムで把握" loading="lazy">
+            <figcaption>全室の入居状況をリアルタイムで把握</figcaption>
+          </figure>
+          <figure class="kanri-portal-item">
+            <img src="images/portal-detail.jpeg" alt="各部屋の契約情報・入居者詳細も一覧で" loading="lazy">
+            <figcaption>各部屋の契約情報・入居者詳細も一覧で</figcaption>
+          </figure>
+          <figure class="kanri-portal-item">
+            <img src="images/portal-history.jpeg" alt="修繕・管理対応の履歴を記録・共有" loading="lazy">
+            <figcaption>修繕・管理対応の履歴を記録・共有</figcaption>
+          </figure>
+        </div>
+        <p class="kanri-portal-note">ご契約オーナー様には個別URLをお渡しします。スマートフォンからいつでもご確認いただけます。</p>
       </div>
 
       <div class="service-faq-wrap">
