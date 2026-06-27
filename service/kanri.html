@@ -49,26 +49,28 @@
     .kanri-portal-gallery {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
+      gap: 20px;
     }
     .kanri-portal-item {
       margin: 0;
     }
     .kanri-portal-item img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 12px;
       border: 1px solid #dde1e8;
       display: block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
     .kanri-portal-item figcaption {
-      font-size: 0.8125rem;
-      color: #555;
-      margin-top: 8px;
+      font-size: 0.875rem;
+      color: #444;
+      margin-top: 10px;
       text-align: center;
       line-height: 1.5;
+      font-weight: 500;
     }
     .kanri-portal-note {
-      margin: 24px 0 0;
+      margin: 28px 0 0;
       font-size: 0.875rem;
       color: #555;
       background: #fff;
@@ -79,7 +81,10 @@
     }
     @media (min-width: 768px) {
       .kanri-portal-gallery {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+        max-width: 680px;
+        margin: 0 auto;
       }
     }
   </style>
@@ -179,7 +184,7 @@
     <div class="container">
       <p class="service-page-label">Service</p>
       <h1 class="service-page-title">賃貸管理</h1>
-      <p class="service-page-subtitle">オーナーの手間を、まとめて引き受けます</p>
+      <p class="service-page-subtitle">オーナー様の手間を、まとめて引き受けます</p>
       <nav class="service-page-breadcrumb">
         <a href="../">トップ</a>
         <span>›</span>
