@@ -250,3 +250,36 @@
   .article-share-btns { gap: 0.5rem; }
   .share-btn { padding: 0.5rem 0.95rem; font-size: 0.79rem; }
 }
+
+/* ---- ピン留めエリア ---- */
+.blog-pinned-area {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.blog-pinned-label {
+  display: inline-block;
+  background: #b8933a;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 4px 12px;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+}
+.blog-list--pinned {
+  display: block;
+  max-width: 400px;
+  border: 2px solid #b8933a;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0;
+  gap: 0;
+}
+.blog-card--pinned {
+  border: none;
+  border-radius: 0;
+}
+.blog-card--pinned .blog-card-link {
+  border: none;
+}
