@@ -70,7 +70,7 @@
       font-weight: 500;
     }
     .kanri-portal-note {
-      margin: 28px 0 0;
+      margin: 28px 0 12px;
       font-size: 0.875rem;
       color: #555;
       background: #fff;
@@ -79,6 +79,19 @@
       border-radius: 0 6px 6px 0;
       line-height: 1.6;
     }
+    .kanri-portal-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #1e3a5f;
+      text-decoration: none;
+      border-bottom: 1px solid #1e3a5f;
+      padding-bottom: 1px;
+      margin-top: 4px;
+    }
+    .kanri-portal-link:hover { opacity: 0.7; }
     @media (min-width: 768px) {
       .kanri-portal-gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -297,7 +310,8 @@
             <figcaption>修繕・管理対応の履歴を記録・共有</figcaption>
           </figure>
         </div>
-        <p class="kanri-portal-note">管理をご契約いただいた全オーナー様に、個別URLをお渡しします。<a href="../blog/202606-kanri-portal.html" style="color:inherit;text-decoration:underline;">オーナーズポータルの詳細はこちらの記事もご覧ください。</a></p>
+        <p class="kanri-portal-note">ご契約いただいたオーナー様お一人おひとりに、専用ポータルを設定してお渡しします。</p>
+        <a href="../blog/202606-kanri-portal.html" class="kanri-portal-link">オーナーズポータルについて詳しく見る <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
       </div>
 
       <div class="service-faq-wrap">
