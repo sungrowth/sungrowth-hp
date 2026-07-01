@@ -224,7 +224,7 @@ a.service-card:hover {
   .service-points { grid-template-columns: 1fr; gap: 0.7rem; }
   .service-points--two { max-width: 100%; grid-template-columns: 1fr; }
   .service-page-hero--img {
-    padding: 4.2rem 0 3rem;
+    padding: 5.5rem 0 3rem;
   }
   .service-page-hero--img .service-page-title {
     font-size: 1.85rem;

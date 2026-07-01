@@ -251,7 +251,11 @@ section { padding: 6.5rem 0; }
   background: var(--navy);
   border-top: 1px solid rgba(255,255,255,0.08);
 }
-.nav-mobile.open { display: block; }
+.nav-mobile.open {
+  display: block;
+  max-height: calc(100vh - var(--header-h));
+  overflow-y: auto;
+}
 .nav-mobile ul { list-style: none; }
 .nav-mobile ul li { border-bottom: 1px solid rgba(255,255,255,0.07); }
 .nav-mobile ul li a {
