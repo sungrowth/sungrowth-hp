@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -13,106 +13,434 @@
   </script>
   <title>足立区の不動産購入サポート | サングロース不動産</title>
   <meta name="description" content="足立区・草加・八潮の不動産購入をサポートします。物件探しからローン相談・内覧同行・引き渡しまで、地域に精通した中立な立場でサポートします。">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="株式会社サングロース">
+  <!-- OGP -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="サングロース不動産">
   <meta property="og:title" content="足立区の不動産購入サポート | サングロース不動産">
-  <meta property="og:description" content="足立区・草加・八潮の不動産購入をサポートします。物件探しからローン相談・内覧同行・引き渡しまで、地域に精通した中立な立場でサポートします。">
+  <meta property="og:description" content="不動産の購入をサポートします。物件探しからローン相談・内覧同行・引き渡しまで、中立な立場でサポートします。">
   <meta property="og:url" content="https://sungrowth.jp/fudosan/service/kounyuu">
-  <link rel="canonical" href="https://sungrowth.jp/fudosan/service/kounyuu">
-  <link rel="icon" type="image/png" href="/images/logo.png">
+  <meta property="og:image" content="https://sungrowth.jp/fudosan/service/images/kounyuu.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/plain.css">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/service.css">
+  <link rel="canonical" href="https://sungrowth.jp/fudosan/service/kounyuu">
 </head>
 <body>
-<header class="hd">
-  <div class="wrap">
-    <a class="brand" href="/fudosan/"><img src="/images/logo.png" alt="">サングロース不動産</a>
-    <nav aria-label="メイン">
-      <a href="/fudosan/#sozoku">相続のご相談</a>
-      <a href="/fudosan/#service">サービス</a>
-      <a href="/fudosan/#latest-posts">読みもの</a>
-      <a href="/fudosan/#about">会社</a>
-      <a href="/">株式会社サングロース</a>
-      <a class="line" href="https://lin.ee/qtz53bj" target="_blank" rel="noopener">LINEで相談</a>
+
+  <!-- SVG Icon Sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-line" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.02 2 11c0 3.15 1.69 5.93 4.28 7.69L5.5 22l3.27-1.71C9.74 20.74 10.86 21 12 21c5.52 0 10-4.02 10-9s-4.48-9-10-9zm1 13H7v-1.5h6V15zm2-3H7v-1.5h8V12zm0-3H7V7.5h8V9z"/>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="m2 7 10 7 10-7"/>
+      </symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M5 12l7-7 7 7"/>
+      </symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 5l7 7-7 7"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12l5 5L20 6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="../" class="nav-logo">
+          <img src="/images/logo.png" alt="サングロース不動産" class="nav-logo-img">
+          <div>
+            <span class="logo-main">サングロース不動産</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../#about">私たちについて</a></li>
+          <li class="nav-has-dropdown">
+            <a href="../#service">サービス</a>
+            <ul class="nav-dropdown">
+              <li><a href="sozoku.html">相続・不動産相談</a></li>
+              <li><a href="baibai.html">売買仲介</a></li>
+              <li><a href="chintai.html">賃貸仲介</a></li>
+              <li><a href="toushi.html">不動産投資</a></li>
+              <li><a href="kanri.html">賃貸管理</a></li>
+              <li><a href="akiya.html">空き家対策・活用</a></li>
+            </ul>
+          </li>
+          <li><a href="../#flow">ご相談の流れ</a></li>
+          <li><a href="../#faq">Q&A</a></li>
+          <li><a href="../company.html">会社概要</a></li>
+          <li><a href="../blog/">記事一覧</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#contact-form" class="nav-btn nav-btn--contact">
+            <svg><use href="#i-mail"/></svg>
+            お問い合わせ
+          </a>
+          <a href="https://lin.ee/qtz53bj" target="_blank" rel="noopener" class="nav-btn nav-btn--line">
+            <svg><use href="#i-line"/></svg>
+            LINEで相談する
+          </a>
+        </div>
+        <button class="nav-hamburger" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="../#about">私たちについて</a></li>
+        <li><a href="../#service">サービス</a></li>
+        <li class="nav-mobile-sub"><a href="sozoku.html">相続・不動産相談</a></li>
+        <li class="nav-mobile-sub"><a href="baibai.html">売買仲介</a></li>
+        <li class="nav-mobile-sub"><a href="chintai.html">賃貸仲介</a></li>
+        <li class="nav-mobile-sub"><a href="toushi.html">不動産投資</a></li>
+        <li class="nav-mobile-sub"><a href="kanri.html">賃貸管理</a></li>
+        <li class="nav-mobile-sub"><a href="akiya.html">空き家対策・活用</a></li>
+        <li><a href="../#flow">ご相談の流れ</a></li>
+        <li><a href="../#faq">Q&A</a></li>
+        <li><a href="../company.html">会社概要</a></li>
+        <li><a href="../blog/">記事一覧</a></li>
+        <li><a href="#contact-form">お問い合わせフォーム</a></li>
+        <li class="nav-mobile-line"><a href="https://lin.ee/qtz53bj" target="_blank" rel="noopener">
+          <svg><use href="#i-line"/></svg>LINEで相談する
+        </a></li>
+      </ul>
     </nav>
-  </div>
-</header>
-<main>
-  <div class="wrap">
-    <p class="crumb"><a href="/fudosan/">サングロース不動産</a>　›　ご相談の内容</p>
-    <h1 class="lead-h" style="padding-top:36px">購入サポート</h1>
-    <div class="prose-wide article" style="margin-top:28px">
-<p class="lead-p" style="margin-top:0">
-      物件のスペック表だけでは見えないことがたくさんあります。エリアの実情・周辺環境の変化・将来の開発動向。現場感のある情報と中立な立場で、物件選びを支えます。
-    </p>
-<h2>こんなお悩みに対応しています</h2>
-<ul><li>物件を探しているが、何を基準に選べばいいかわからない</li><li>住宅ローンをどのくらい借りられるか、返せるか不安</li><li>新築と中古、どちらが自分に合っているかわからない</li><li>エリアの環境・利便性について正直に教えてほしい</li><li>内覧で何を確認すればいいかわからない</li><li>住み替えで、今の家を売りながら購入も進めたい</li></ul>
-<h2>サングロース不動産で購入するメリット</h2>
-<ul class="plain-list">
-<li><strong>足立区・草加・八潮をフラットにご提案できる</strong><br>都内か埼玉かで最初から絞り込まず、生活圏として両エリアを中立に比較してご提案します。どちらかに誘導するような案内はしません。</li>
-<li><strong>30年以上住み続けた現場の感覚</strong><br>花畑周辺に長年暮らしてきたからこそわかる、日常の買い物の実際の距離感、学校・公園・病院との位置関係、朝の交通の混み具合。スペック表には載らない情報をお伝えします。</li>
-<li><strong>気になる点は正直にお伝えします</strong><br>「この物件はここが気になる」という点も、隠さずお伝えするのが当社の方針です。売ることよりも、後悔しない選択をしていただくことを優先します。</li>
-</ul>
-<h2>購入サポートの流れ</h2>
-<p class="muted">ご相談・内覧同行は何度でも無料です。費用（仲介手数料）が発生するのは、売買契約が成立した時のみです。LINE・お電話・オンラインでのご相談に対応しています。</p>
-<ol class="plain-list">
-<li><strong>ご希望ヒアリング</strong><br>予算・エリア・間取りなどをお聞きします。「まだ決まっていない」段階でも一緒に整理します。</li>
-<li><strong>物件のご提案・内覧同行</strong><br>条件に合う物件をご紹介し内覧に同行します。スペック表に出ない周辺環境・管理状態も現場でお伝えします。</li>
-<li><strong>住宅ローンの検討</strong><br>提携先の金融機関をご紹介し、事前審査もサポートします。月々の返済額まで一緒に確認します。</li>
-<li><strong>価格交渉・売買契約</strong><br>値引き交渉や条件付き申し込みにも対応します。署名前に疑問点を全部解消してから進めます。</li>
-<li><strong>引き渡し・入居</strong><br>残代金のお支払いと物件の引き渡しで完了。設備確認や鍵の説明も当日対応します。</li>
-</ol>
-<h2>物件選びで後悔しないために</h2>
-<ol class="plain-list">
-<li><strong>内覧は1回で決めない</strong><br>同じ物件でも、朝と夕方、平日と休日では印象が変わります。通勤時間帯に訪れると騒音や混雑の実態がわかり、雨の日なら排水や湿気の状況も確認できます。気に入った物件は、ぜひ複数回見てください。</li>
-<li><strong>スペックより「暮らし方」でイメージする</strong><br>広さの数字より、どう使うかをイメージして見てください。子どもが走り回れるリビングか、収納の動線が生活に合っているか。具体的な生活シーンで考えると、決めやすくなります。</li>
-<li><strong>周辺環境は自分の足で確認する</strong><br>スーパーや駅までの距離感、夜道の明るさ、近隣の雰囲気は、実際に歩いてみないとわかりません。地図上の距離より体感の距離の方が、住んでからずっと重要になります。</li>
-<li><strong>管理状態を目で見ておく</strong><br>マンションなら共用廊下やエントランスの清潔さ、掲示板の内容。戸建てなら外壁のひびや雨樋の状態。管理が行き届いている物件は、入居後のトラブルが少ない傾向があります。</li>
-</ol>
-<h2>住宅ローンについて知っておきたいこと</h2>
-<ul class="plain-list">
-<li><strong>変動金利と固定金利、どちらが良い？</strong><br>変動金利は現在の金利水準が低い時期に有利ですが、将来的な金利上昇で返済額が増えるリスクがあります。全期間固定金利は返済額が一定で家計の見通しが立てやすい反面、当初の金利はやや高くなります。どちらが合うかは収入の安定性や家族構成によって違うので、一緒に考えましょう。</li>
-<li><strong>事前審査は早めに動く</strong><br>気に入った物件への申し込みは、住宅ローンの事前審査が通っていることが前提になります。「良い物件に出会ってから審査する」では、人気物件に間に合わないことがあります。物件を本格的に探し始める前に、事前審査だけでも済ませておくことをおすすめします。</li>
-<li><strong>「借りられる額」と「返せる額」は違う</strong><br>金融機関の審査上の借入可能額と、実際に無理なく返せる額は別の話です。月々の返済が生活費を圧迫しないよう、余裕を持った資金計画が大切です。具体的な返済シミュレーションはご相談の中で一緒に確認します。</li>
-</ul>
-<h2>よくあるご質問</h2>
-<dl class="qa">
-<div><dt>購入の相談は無料ですか？</dt><dd>はい、相談・内覧同行は無料です。費用が発生するのは、実際に売買契約が成立した場合のみです。なお、仲介手数料は物件価格の3.3%＋6.6万円（税込）です。</dd></div>
-<div><dt>他社に問い合わせた物件でも購入サポートしてもらえますか？</dt><dd>はい、レインズ（不動産流通機構）に登録されている物件であれば、基本的にご対応できます。まずはお問い合わせください。</dd></div>
-<div><dt>新築と中古、どちらがいいですか？</dt><dd>どちらが良いかはご状況によって異なります。新築は修繕リスクが低く設備が新しい一方、価格が高くなります。中古は価格が抑えられ、実際の状態を内覧で確認できるメリットがあります。ご予算・優先条件をお聞きした上でご提案します。</dd></div>
-<div><dt>今の家を売りながら、新しい物件を購入できますか？</dt><dd>はい、売却と購入の同時進行に対応しています。タイミングの調整が重要ですので、早めにご相談いただくことをおすすめします。</dd></div>
-</dl>
+  </header>
+
+  <!-- ============ ページヘッダー ============ -->
+  <div class="service-page-hero">
+    <div class="container">
+      <h1 class="service-page-title">購入サポート</h1>
+      <p class="service-page-subtitle">物件探しから引き渡しまで、中立な立場でサポートします</p>
+      <nav class="service-page-breadcrumb">
+        <a href="../">トップ</a>
+        <span>›</span>
+        <a href="../#service">サービス</a>
+        <span>›</span>
+        <a href="baibai.html">売買仲介</a>
+        <span>›</span>
+        <span>購入</span>
+      </nav>
     </div>
   </div>
-  <section class="part" id="contact-form">
-    <div class="wrap">
-      <h2>ご相談</h2>
-      <p style="max-width:36em">LINEで、気になることを、そのまま送ってください。フォームは、<a href="/fudosan/#contact-form">サングロース不動産のトップ</a>にあります。</p>
-      <div class="contact-line">
-        <a class="btn-line" href="https://lin.ee/qtz53bj" target="_blank" rel="noopener">LINEで相談する</a>
-        <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=168x168&amp;data=https://lin.ee/qtz53bj&amp;color=1D1D1B&amp;bgcolor=FBFAF7" alt="LINEのQRコード" width="84" height="84" loading="lazy"><span>スマートフォンで、<br>読み取れます。</span></div>
+
+  <!-- ============ コンテンツ ============ -->
+  <div class="service-content">
+
+    <div class="service-eyecatch">
+      <img src="images/kounyuu.jpg" alt="不動産購入サポート" loading="eager">
+    </div>
+
+    <p class="service-lead">
+      物件のスペック表だけでは見えないことがたくさんあります。エリアの実情・周辺環境の変化・将来の開発動向。現場感のある情報と中立な立場で、物件選びを支えます。
+    </p>
+
+    <div class="service-body">
+
+      <h2>こんなお悩みに対応しています</h2>
+      <ul>
+        <li><svg><use href="#i-check"/></svg><span>物件を探しているが、何を基準に選べばいいかわからない</span></li>
+        <li><svg><use href="#i-check"/></svg><span>住宅ローンをどのくらい借りられるか、返せるか不安</span></li>
+        <li><svg><use href="#i-check"/></svg><span>新築と中古、どちらが自分に合っているかわからない</span></li>
+        <li><svg><use href="#i-check"/></svg><span>エリアの環境・利便性について正直に教えてほしい</span></li>
+        <li><svg><use href="#i-check"/></svg><span>内覧で何を確認すればいいかわからない</span></li>
+        <li><svg><use href="#i-check"/></svg><span>住み替えで、今の家を売りながら購入も進めたい</span></li>
+      </ul>
+
+      <h2>サングロース不動産で購入するメリット</h2>
+      <div class="service-merit-list">
+        <div class="service-merit-item">
+          <h3>足立区・草加・八潮をフラットにご提案できる</h3>
+          <p>都内か埼玉かで最初から絞り込まず、生活圏として両エリアを中立に比較してご提案します。どちらかに誘導するような案内はしません。</p>
+        </div>
+        <div class="service-merit-item">
+          <h3>30年以上住み続けた現場の感覚</h3>
+          <p>花畑周辺に長年暮らしてきたからこそわかる、日常の買い物の実際の距離感、学校・公園・病院との位置関係、朝の交通の混み具合。スペック表には載らない情報をお伝えします。</p>
+        </div>
+        <div class="service-merit-item">
+          <h3>気になる点は正直にお伝えします</h3>
+          <p>「この物件はここが気になる」という点も、隠さずお伝えするのが当社の方針です。売ることよりも、後悔しない選択をしていただくことを優先します。</p>
+        </div>
+      </div>
+
+      <h2>購入サポートの流れ</h2>
+
+      <p class="service-flow-note">ご相談・内覧同行は何度でも無料です。費用（仲介手数料）が発生するのは、売買契約が成立した時のみです。LINE・お電話・オンラインでのご相談に対応しています。</p>
+      <div class="service-flow-list">
+        <div class="service-flow-item">
+          <span class="service-flow-num">01</span>
+          <div class="service-flow-body">
+            <span class="service-flow-title">ご希望ヒアリング</span>
+            <p class="service-flow-desc">予算・エリア・間取りなどをお聞きします。「まだ決まっていない」段階でも一緒に整理します。</p>
+          </div>
+        </div>
+        <div class="service-flow-item">
+          <span class="service-flow-num">02</span>
+          <div class="service-flow-body">
+            <span class="service-flow-title">物件のご提案・内覧同行</span>
+            <p class="service-flow-desc">条件に合う物件をご紹介し内覧に同行します。スペック表に出ない周辺環境・管理状態も現場でお伝えします。</p>
+          </div>
+        </div>
+        <div class="service-flow-item">
+          <span class="service-flow-num">03</span>
+          <div class="service-flow-body">
+            <span class="service-flow-title">住宅ローンの検討</span>
+            <p class="service-flow-desc">提携先の金融機関をご紹介し、事前審査もサポートします。月々の返済額まで一緒に確認します。</p>
+          </div>
+        </div>
+        <div class="service-flow-item">
+          <span class="service-flow-num">04</span>
+          <div class="service-flow-body">
+            <span class="service-flow-title">価格交渉・売買契約</span>
+            <p class="service-flow-desc">値引き交渉や条件付き申し込みにも対応します。署名前に疑問点を全部解消してから進めます。</p>
+          </div>
+        </div>
+        <div class="service-flow-item">
+          <span class="service-flow-num">05</span>
+          <div class="service-flow-body">
+            <span class="service-flow-title">引き渡し・入居</span>
+            <p class="service-flow-desc">残代金のお支払いと物件の引き渡しで完了。設備確認や鍵の説明も当日対応します。</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>物件選びで後悔しないために</h2>
+      <div class="service-tips-list">
+        <div class="service-tips-item">
+          <span class="service-tips-num">01</span>
+          <div class="service-tips-body">
+            <h3>内覧は1回で決めない</h3>
+            <p>同じ物件でも、朝と夕方、平日と休日では印象が変わります。通勤時間帯に訪れると騒音や混雑の実態がわかり、雨の日なら排水や湿気の状況も確認できます。気に入った物件は、ぜひ複数回見てください。</p>
+          </div>
+        </div>
+        <div class="service-tips-item">
+          <span class="service-tips-num">02</span>
+          <div class="service-tips-body">
+            <h3>スペックより「暮らし方」でイメージする</h3>
+            <p>広さの数字より、どう使うかをイメージして見てください。子どもが走り回れるリビングか、収納の動線が生活に合っているか。具体的な生活シーンで考えると、決めやすくなります。</p>
+          </div>
+        </div>
+        <div class="service-tips-item">
+          <span class="service-tips-num">03</span>
+          <div class="service-tips-body">
+            <h3>周辺環境は自分の足で確認する</h3>
+            <p>スーパーや駅までの距離感、夜道の明るさ、近隣の雰囲気は、実際に歩いてみないとわかりません。地図上の距離より体感の距離の方が、住んでからずっと重要になります。</p>
+          </div>
+        </div>
+        <div class="service-tips-item">
+          <span class="service-tips-num">04</span>
+          <div class="service-tips-body">
+            <h3>管理状態を目で見ておく</h3>
+            <p>マンションなら共用廊下やエントランスの清潔さ、掲示板の内容。戸建てなら外壁のひびや雨樋の状態。管理が行き届いている物件は、入居後のトラブルが少ない傾向があります。</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>住宅ローンについて知っておきたいこと</h2>
+      <div class="service-loan-section">
+        <div class="service-loan-item">
+          <h3>変動金利と固定金利、どちらが良い？</h3>
+          <p>変動金利は現在の金利水準が低い時期に有利ですが、将来的な金利上昇で返済額が増えるリスクがあります。全期間固定金利は返済額が一定で家計の見通しが立てやすい反面、当初の金利はやや高くなります。どちらが合うかは収入の安定性や家族構成によって違うので、一緒に考えましょう。</p>
+        </div>
+        <div class="service-loan-item">
+          <h3>事前審査は早めに動く</h3>
+          <p>気に入った物件への申し込みは、住宅ローンの事前審査が通っていることが前提になります。「良い物件に出会ってから審査する」では、人気物件に間に合わないことがあります。物件を本格的に探し始める前に、事前審査だけでも済ませておくことをおすすめします。</p>
+        </div>
+        <div class="service-loan-item">
+          <h3>「借りられる額」と「返せる額」は違う</h3>
+          <p>金融機関の審査上の借入可能額と、実際に無理なく返せる額は別の話です。月々の返済が生活費を圧迫しないよう、余裕を持った資金計画が大切です。具体的な返済シミュレーションはご相談の中で一緒に確認します。</p>
+        </div>
+      </div>
+
+      <div class="service-faq-wrap">
+        <h2 class="service-faq-heading">よくあるご質問</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-mark">Q</span>
+              <span>購入の相談は無料ですか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、相談・内覧同行は無料です。費用が発生するのは、実際に売買契約が成立した場合のみです。なお、仲介手数料は物件価格の3.3%＋6.6万円（税込）です。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-mark">Q</span>
+              <span>他社に問い合わせた物件でも購入サポートしてもらえますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、レインズ（不動産流通機構）に登録されている物件であれば、基本的にご対応できます。まずはお問い合わせください。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-mark">Q</span>
+              <span>新築と中古、どちらがいいですか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>どちらが良いかはご状況によって異なります。新築は修繕リスクが低く設備が新しい一方、価格が高くなります。中古は価格が抑えられ、実際の状態を内覧で確認できるメリットがあります。ご予算・優先条件をお聞きした上でご提案します。</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-q-mark">Q</span>
+              <span>今の家を売りながら、新しい物件を購入できますか？</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>はい、売却と購入の同時進行に対応しています。タイミングの調整が重要ですので、早めにご相談いただくことをおすすめします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- ============ CONTACT FORM ============ -->
+  <section id="contact-form">
+    <div class="container">
+      <h2 class="section-heading-center fade-in" data-en="Contact">お問い合わせ</h2>
+      <div class="form-wrap fade-in">
+        <div class="form-lead">
+          <h3>お気軽にご連絡ください。</h3>
+          <p>LINEまたはフォームよりご連絡ください。</p>
+          <div class="form-line-box">
+            <span class="form-line-label">LINEでお問い合わせ</span>
+            <a href="https://lin.ee/qtz53bj" target="_blank" rel="noopener" class="btn-line-main">
+              <svg><use href="#i-line"/></svg>LINEで友だち追加する
+            </a>
+            <div class="form-line-qr-wrap">
+              <div class="form-line-qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https://lin.ee/qtz53bj&color=1e3a5f&bgcolor=ffffff"
+                     alt="LINE QRコード" width="80" height="80" loading="lazy">
+              </div>
+              <p class="form-line-qr-note">スマートフォンのカメラで<br>QRコードを読み取れます</p>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form-el" action="https://formspree.io/f/xaqanrzn" method="POST" class="contact-form" data-redirect="../thanks.html">
+          <p class="form-note">お返事は通常1〜2営業日以内にお送りしています。</p>
+          <input type="hidden" name="_subject" value="【サングロース不動産】お問い合わせが届きました">
+          <input type="text" name="_gotcha" style="display:none">
+          <div class="form-row">
+            <label for="f-name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="f-name" name="name" placeholder="例）山田 太郎" required>
+          </div>
+          <div class="form-row">
+            <label for="f-tel">電話番号 <span class="req">必須</span></label>
+            <input type="tel" id="f-tel" name="tel" placeholder="例）090-0000-0000" required>
+            <p class="form-hint">※ 日程調整のご連絡のみに使用します。</p>
+          </div>
+          <div class="form-row">
+            <label for="f-email">メールアドレス <span class="opt">任意</span></label>
+            <input type="email" id="f-email" name="email" placeholder="例）sample@email.com">
+            <p class="form-hint">※ メールでのご返信を希望の場合は、お問い合わせ内容にその旨をご記入ください。</p>
+          </div>
+          <div class="form-row">
+            <label for="f-category">お問い合わせ種別</label>
+            <select id="f-category" name="category">
+              <option value="">選択してください</option>
+              <option value="inherit">相続・不動産相談</option>
+              <option value="sell">売却について</option>
+              <option value="buy" selected>購入について</option>
+              <option value="rent">賃貸について</option>
+              <option value="invest">投資・収益物件について</option>
+              <option value="other">その他・まだ決まっていない</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="f-message">お問い合わせ内容 <span class="req">必須</span></label>
+            <textarea id="f-message" name="message" placeholder="「まだ何も決まっていない」でも大丈夫です。気になることを自由にご記入ください。" required></textarea>
+          </div>
+          <p class="form-privacy">ご入力いただいた個人情報は、お問い合わせへの返答のみに使用し、第三者への提供は一切行いません。</p>
+          <div class="form-submit-wrap">
+            <button type="submit" class="form-submit-btn" id="submit-btn">
+              相談してみる <svg><use href="#i-arrow-right"/></svg>
+            </button>
+          </div>
+          <div id="form-success" class="form-alert form-alert--ok">
+            お問い合わせありがとうございます。内容を確認のうえ、担当者より折り返しご連絡いたします。
+          </div>
+          <div id="form-error" class="form-alert form-alert--err">
+            送信に失敗しました。お手数ですが、LINEにてご連絡ください。
+          </div>
+        </form>
       </div>
     </div>
   </section>
-</main>
-<footer class="ft">
-  <div class="wrap">
-    <div class="cols">
-      <div>
-        <p class="name">株式会社サングロース</p>
-        <p>東京都足立区花畑</p>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="/images/logo.png" alt="サングロース不動産" class="footer-logo-img">
+          <div>
+            <div class="footer-brand-name">サングロース不動産</div>
+            <p class="footer-brand-desc">足立区花畑を拠点に、<br>地域に根ざした不動産サービスを提供しています。</p>
+          </div>
+        </div>
+        <div class="footer-nav-wrap">
+          <nav class="footer-nav">
+            <h4>メニュー</h4>
+            <ul>
+              <li><a href="../#about">私たちについて</a></li>
+              <li><a href="../#service">サービス</a></li>
+              <li><a href="../#flow">ご相談の流れ</a></li>
+              <li><a href="../#faq">Q&A</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-nav">
+            <h4>お問い合わせ</h4>
+            <ul>
+              <li><a href="../company.html">会社概要</a></li>
+              <li><a href="#contact-form">お問い合わせ</a></li>
+              <li><a href="https://lin.ee/qtz53bj" target="_blank" rel="noopener">LINEで相談する</a></li>
+            </ul>
+          </nav>
+          <div class="footer-line-block">
+            <h4>LINE</h4>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=90x90&data=https://lin.ee/qtz53bj&color=ffffff&bgcolor=1e3a5f"
+                 alt="LINE QR" width="90" height="90" class="footer-qr">
+          </div>
+        </div>
       </div>
-      <ul>
-        <li><a href="/fudosan/">サングロース不動産</a></li>
-        <li><a href="/systems/">サングロースシステム(ホームページ制作・システム開発)</a></li>
-        <li><a href="/#company">会社概要</a></li>
-      </ul>
+      <p class="footer-copy">&copy; <span id="copy-year"></span> 株式会社サングロース</p>
     </div>
-    <p class="copy">&copy; <span id="copy-year"></span> 株式会社サングロース</p>
-  </div>
-</footer>
-<script>document.getElementById('copy-year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <!-- Floating LINE -->
+  <a href="https://lin.ee/qtz53bj" target="_blank" rel="noopener" class="float-line" aria-label="LINEで相談する">
+    <svg><use href="#i-line"/></svg>
+    <span>LINE相談</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="トップへ戻る">
+    <svg><use href="#i-arrow-up"/></svg>
+  </button>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
+
+
+
