@@ -68,6 +68,7 @@ if (form) {
       return;
     }
 
+    const btnOriginalText = btn.textContent;
     btn.textContent = '送信中...';
     btn.disabled = true;
     if (successMsg) successMsg.style.display = 'none';
@@ -85,7 +86,7 @@ if (form) {
       } else { throw new Error(); }
     } catch {
       if (errorMsg) errorMsg.style.display = 'block';
-      btn.textContent = '相談してみる';
+      btn.textContent = btnOriginalText;
       btn.disabled = false;
     }
   });

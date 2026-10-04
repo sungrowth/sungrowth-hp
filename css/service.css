@@ -143,7 +143,23 @@ a.service-card:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(12, 28, 55, 0.68);
+  background: linear-gradient(
+    to bottom,
+    rgba(12, 28, 55, 0.55) 0%,
+    rgba(12, 28, 55, 0.68) 55%,
+    rgba(12, 28, 55, 0.82) 100%
+  );
+}
+.service-page-hero--img .service-page-title::before {
+  content: 'Service';
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold-lt);
+  margin-bottom: 0.9rem;
 }
 .service-page-hero--img .container {
   position: relative;
@@ -267,6 +283,16 @@ a.service-card:hover {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid var(--border);
   letter-spacing: 0.05em;
+  position: relative;
+}
+.service-body h2::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
 }
 .service-body h3 {
   font-size: 1rem;
@@ -326,6 +352,15 @@ a.service-card:hover {
   padding: 2.5rem 2rem;
   text-align: center;
   margin-top: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.service-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--gold), var(--gold-lt), var(--gold));
 }
 .service-cta-title {
   font-family: var(--font-serif);

@@ -39,11 +39,44 @@ section { padding: 6.5rem 0; }
 .br-sp { display: none; }
 @media (max-width: 640px) { .br-sp { display: block; } }
 
+/* ---- 日本語改行の最適化 ---- */
+/* 見出しは行のバランスを取り、対応ブラウザでは文節単位で折り返す */
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+h1, h2, h3,
+.hero-eyecatch, .hero-sub,
+.service-lead, .service-page-subtitle,
+.trust-item span, .service-card p,
+.post-card-title, .faq-answer p,
+.about-text, .form-lead p {
+  word-break: auto-phrase;
+}
+/* 文節ブロック（どのブラウザでも塊ごとに折り返す） */
+.nb { display: inline-block; }
+
+/* ---- キーボード操作時のフォーカス表示 ---- */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---- 視覚効果を減らす設定への配慮 ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .fade-in { opacity: 1; transform: none; }
+}
+
 /* ---- Scroll animation ---- */
 .fade-in {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.65s ease, transform 0.65s ease;
+  transform: translateY(26px);
+  transition: opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1), transform 0.85s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .fade-in.visible { opacity: 1; transform: none; }
 
@@ -64,6 +97,17 @@ section { padding: 6.5rem 0; }
   height: 2px;
   background: var(--gold);
   margin: 0.8rem auto 0;
+}
+.section-heading-center[data-en]::before {
+  content: attr(data-en);
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
 }
 
 
@@ -339,9 +383,59 @@ section { padding: 6.5rem 0; }
   margin-bottom: 2.4rem;
 }
 
+/* 縦書きアクセント */
+.hero-vertical {
+  position: absolute;
+  top: 50%;
+  right: clamp(1rem, 3vw, 2.5rem);
+  transform: translateY(-50%);
+  z-index: 2;
+  writing-mode: vertical-rl;
+  font-family: var(--font-serif);
+  font-size: 0.82rem;
+  letter-spacing: 0.42em;
+  color: rgba(30,58,95,0.4);
+}
+@media (max-width: 900px) {
+  .hero-vertical { display: none; }
+}
+
+/* Scroll cue */
+.hero-scroll {
+  position: absolute;
+  bottom: 0;
+  left: clamp(1.5rem, 8vw, 10rem);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.hero-scroll span {
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  writing-mode: vertical-rl;
+}
+.hero-scroll::after {
+  content: '';
+  width: 1px;
+  height: 56px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scroll-cue 2.2s ease-in-out infinite;
+  transform-origin: top;
+}
+@keyframes scroll-cue {
+  0%   { transform: scaleY(0); }
+  45%  { transform: scaleY(1); }
+  100% { transform: scaleY(1); opacity: 0; }
+}
+
 @media (max-width: 640px) {
   #hero { background-position: center center; }
   .hero-inner { padding: 4rem 1.5rem; }
+  .hero-scroll { display: none; }
   .hero-overlay {
     background: linear-gradient(
       to bottom,
@@ -362,6 +456,16 @@ section { padding: 6.5rem 0; }
   background: var(--off-white);
   border-bottom: 1px solid var(--border);
   padding: 1.4rem 0;
+  position: relative;
+}
+.trust-bar::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: min(1140px, 92%);
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
 }
 .trust-items {
   display: flex;
@@ -669,12 +773,24 @@ section { padding: 6.5rem 0; }
 }
 .service-card:hover::after { transform: scaleX(1); }
 .service-card-icon {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   color: var(--navy);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
 }
-.service-card-icon svg { width: 100%; height: 100%; }
+.service-card-icon svg { width: 26px; height: 26px; }
+.service-card:hover .service-card-icon {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--gold-lt);
+}
 .service-card h3 {
   font-family: var(--font-serif);
   font-size: 0.98rem;
@@ -687,6 +803,21 @@ section { padding: 6.5rem 0; }
   line-height: 1.75;
   flex: 1;
 }
+
+/* カードの時間差フェード */
+.service-grid .service-card:nth-child(2) { transition-delay: 0.08s; }
+.service-grid .service-card:nth-child(3) { transition-delay: 0.16s; }
+.service-grid .service-card:nth-child(4) { transition-delay: 0.08s; }
+.service-grid .service-card:nth-child(5) { transition-delay: 0.16s; }
+.service-grid .service-card:nth-child(6) { transition-delay: 0.24s; }
+.trust-items .trust-item:nth-child(2) { transition-delay: 0.08s; }
+.trust-items .trust-item:nth-child(3) { transition-delay: 0.16s; }
+.trust-items .trust-item:nth-child(4) { transition-delay: 0.24s; }
+.latest-posts-grid .post-card:nth-child(2) { transition-delay: 0.1s; }
+.latest-posts-grid .post-card:nth-child(3) { transition-delay: 0.2s; }
+/* ホバー時は遅延なし（時間差はフェードイン専用） */
+.service-grid .service-card:hover,
+.latest-posts-grid .post-card:hover { transition-delay: 0s; }
 
 @media (max-width: 960px) {
   .service-grid { grid-template-columns: repeat(2, 1fr); }
@@ -710,7 +841,7 @@ section { padding: 6.5rem 0; }
   align-items: center;
 }
 .about-photo {
-  overflow: hidden;
+  position: relative;
   border-radius: 2px;
 }
 .about-photo img {
@@ -718,6 +849,12 @@ section { padding: 6.5rem 0; }
   height: 420px;
   object-fit: cover;
   display: block;
+  border-radius: 2px;
+  position: relative;
+  z-index: 1;
+}
+.about-photo img {
+  box-shadow: 0 10px 32px rgba(30,58,95,0.1);
 }
 .about-label {
   font-size: 0.75rem;
@@ -952,6 +1089,7 @@ section { padding: 6.5rem 0; }
   padding: 1rem 1.2rem;
   color: var(--text);
   line-height: 1.85;
+  word-break: keep-all;
 }
 .company-table td a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 .company-table small { font-size: 0.82em; color: var(--text-mute); }

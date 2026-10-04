@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /thanks.html
+Disallow: /fudosan/thanks.html
 
 Sitemap: https://sungrowth.jp/sitemap.xml

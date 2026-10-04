@@ -1,0 +1,7 @@
+# 旧URL → 新URL（A案移行に伴う301リダイレクト）
+/company.html /fudosan/company.html 301
+/thanks.html /fudosan/thanks.html 301
+/service/* /fudosan/service/:splat 301
+/blog/* /fudosan/blog/:splat 301
+/corp/ / 301
+/corp /  301

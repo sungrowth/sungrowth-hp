@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ページが見つかりません | 株式会社サングロース</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .nf-section {
+      min-height: calc(100vh - 200px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 1.5rem;
+      background: var(--off-white);
+    }
+    .nf-box {
+      text-align: center;
+      max-width: 520px;
+    }
+    .nf-code {
+      font-family: var(--font-serif);
+      font-size: 5rem;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+    .nf-rule {
+      width: 40px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 1.6rem;
+    }
+    .nf-title {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .nf-body {
+      font-size: 0.9rem;
+      color: var(--text-mute);
+      line-height: 1.9;
+      margin-bottom: 2rem;
+    }
+    .nf-actions {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .nf-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.75rem 1.6rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      background: var(--navy);
+      color: var(--white);
+      transition: background 0.2s;
+    }
+    .nf-btn:hover { background: var(--navy-mid); }
+    .nf-btn--sub {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--border);
+    }
+    .nf-btn--sub:hover { background: var(--white); }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header id="header">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="/" class="nav-logo">
+          <img src="/images/logo.png" alt="株式会社サングロース" class="nav-logo-img">
+          <div>
+            <span class="logo-main">株式会社サングロース</span>
+            <span class="logo-sub">SUNGROWTH CO., LTD.</span>
+          </div>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ 404 ============ -->
+  <section class="nf-section">
+    <div class="nf-box">
+      <p class="nf-code">404</p>
+      <div class="nf-rule"></div>
+      <h1 class="nf-title">ページが見つかりません</h1>
+      <p class="nf-body">お探しのページは移動または削除された可能性があります。<br>以下よりお探しください。</p>
+      <div class="nf-actions">
+        <a href="/" class="nf-btn">会社トップへ</a>
+        <a href="/fudosan/" class="nf-btn nf-btn--sub">サングロース不動産</a>
+        <a href="/systems/" class="nf-btn nf-btn--sub">サングロースシステム</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer">
+    <div class="container">
+      <p class="footer-copy">&copy; <span id="copy-year"></span> Sungrowth Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
