@@ -150,17 +150,6 @@ a.service-card:hover {
     rgba(12, 28, 55, 0.82) 100%
   );
 }
-.service-page-hero--img .service-page-title::before {
-  content: 'Service';
-  display: block;
-  font-family: var(--font-sans);
-  font-size: 0.66rem;
-  font-weight: 500;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--gold-lt);
-  margin-bottom: 0.9rem;
-}
 .service-page-hero--img .container {
   position: relative;
   z-index: 1;

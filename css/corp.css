@@ -90,19 +90,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-.corp-hero::before {
-  content: 'SUNGROWTH';
-  position: absolute;
-  top: 1.5rem;
-  right: -1rem;
-  font-size: clamp(4rem, 13vw, 10rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  color: rgba(26,26,26,0.035);
-  white-space: nowrap;
-  pointer-events: none;
-  line-height: 1;
-}
 .corp-hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
