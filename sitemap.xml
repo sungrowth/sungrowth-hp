@@ -22,49 +22,49 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/company.html</loc>
+    <loc>https://sungrowth.jp/fudosan/company</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Service pages -->
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/sozoku.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/sozoku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/baibai.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/baibai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/baikyaku.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/baikyaku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/kounyuu.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/kounyuu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/chintai.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/chintai</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/toushi.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/toushi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/kanri.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/kanri</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/service/akiya.html</loc>
+    <loc>https://sungrowth.jp/fudosan/service/akiya</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -76,57 +76,57 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202606-kanri-portal.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202606-kanri-portal</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202606-adachi-baikyaku.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202606-adachi-baikyaku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202605-adachi-sozoku.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202605-adachi-sozoku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202605-soka-sozoku.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202605-soka-sozoku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202605-yashio-sozoku.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202605-yashio-sozoku</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202605-akiya-kanri.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202605-akiya-kanri</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202605-chintai-joken-minaoshi.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202605-chintai-joken-minaoshi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202605-adachi-chuko-joseikin.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202605-adachi-chuko-joseikin</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202604-hanabatake-kensakyo.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202604-hanabatake-kensakyo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202604-adachi-kosodate-chian.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202604-adachi-kosodate-chian</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://sungrowth.jp/fudosan/blog/202604-adachi-eki-erabikata.html</loc>
+    <loc>https://sungrowth.jp/fudosan/blog/202604-adachi-eki-erabikata</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
