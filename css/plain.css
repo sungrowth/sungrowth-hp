@@ -109,6 +109,7 @@ p{margin:0 0 1.1em;}
 }
 @media (max-width: 520px){
   .wrap{padding-left:20px; padding-right:20px;}
+  .hero .wrap{padding-left:20px; padding-right:20px;}
   .lead-h{padding-top:52px;}
   .part{padding-top:56px;}
   .screens{gap:16px;}
@@ -161,10 +162,11 @@ ol.plain-list li::before{content:counter(s) "."; position:absolute; left:0; font
 /* ---- 第2版: 画像を使うトップ・システム ---- */
 .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line);}
 .hero > img{display:block; width:100%; height:clamp(340px, 44vw, 620px); object-fit:cover; object-position:right center;}
-.hero .wrap{position:absolute; left:0; right:0; top:0; bottom:0; display:flex; align-items:center;}
+.hero .wrap{position:absolute; left:0; right:0; top:0; bottom:0; display:flex; align-items:center; max-width:none; margin:0; padding-left:max(24px, calc(38vw - 400px)); padding-right:0;}
 .hero .txt{max-width:min(460px, 44%);}
 .hero h1{font-size:clamp(26px, 3vw, 42px); line-height:1.5;}
 .hero .sub{margin:20px 0 0; font-size:clamp(16px, 1.6vw, 19px);}
+.hero h1 .nb, .hero .sub .nb{display:block;}
 .pair{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); gap:56px; align-items:center; padding:44px 0; border-top:1px solid var(--line);}
 .pair:last-child{border-bottom:1px solid var(--line);}
 .pair.rev > img{order:2;}
@@ -178,7 +180,7 @@ ol.plain-list li::before{content:counter(s) "."; position:absolute; left:0; font
 @media (max-width: 860px){
   .hero{display:flex; flex-direction:column-reverse;}
   .hero > img{height:240px;}
-  .hero .wrap{position:static; padding-top:32px; padding-bottom:36px;}
+  .hero .wrap{position:static; padding:32px 28px 36px;}
   .hero .txt{max-width:none;}
   .pair{grid-template-columns:1fr; gap:20px; padding:32px 0;}
   .pair.rev > img{order:0;}
